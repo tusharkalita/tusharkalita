@@ -1,1 +1,121 @@
-<html><body><h1>test</h1></body></html>
+<HTML>
+
+<head><style>
+
+a:link { text-decoration: none; }
+
+a:visited { text-decoration: none; }
+
+a:hover { text-decoration: none; }
+
+a:active { text-decoration: none; }
+
+:root {
+  --bg-color: hsl(49 37% 94%);
+  --typewriterSpeed: 6s;
+  --typewriterCharacters: 24;
+}
+
+body {
+  margin: 0;
+  font-family: "Source Sans Pro", sans-serif;
+  min-height: 100vh;
+  display: grid;
+  place-content: center;
+  text-align: center;
+  background: var(--bg-color);
+}
+
+h1 {
+  font-size: clamp(1rem, 3vw + 1rem, 4rem);
+  position: relative;
+  font-family: "Verdana,Geneva,sans-serif", monospace;
+  position: relative;
+  width: max-content;
+}
+
+h1::before,
+h1::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+h1::before {
+  background: var(--bg-color);
+  animation: typewriter var(--typewriterSpeed)
+    steps(var(--typewriterCharacters)) 1s forwards;
+}
+
+h1::after {
+  width: 0.125em;
+  background: black;
+  animation: typewriter var(--typewriterSpeed)
+      steps(var(--typewriterCharacters)) 1s forwards,
+    blink 750ms steps(var(--typewriterCharacters)) infinite;
+}
+
+.subtitle {
+  color: hsl(0 0% 0% / 0.7);
+  font-size: 2rem;
+  font-weight: 400;
+  opacity: 0;
+  transform: translateY(3rem);
+  animation: fadeInUp 2s ease calc(var(--typewriterSpeed) + 2s) forwards;
+}
+
+@keyframes typewriter {
+  to {
+    left: 100%;
+  }
+}
+
+@keyframes blink {
+  to {
+    background: transparent;
+  }
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+#yt-link {
+  position: absolute;
+  bottom: 2em;
+  width: 100%;
+  color: hsl(0 0 0 / 0.7);
+
+  &:hover,
+  &:focus {
+    color: teal;
+  }
+}
+
+</style></head>
+
+<BODY BGCOLOR=#dedcdc>
+
+<p style="text-align:center">&nbsp;</p>
+
+<p style="text-align:center">&nbsp;</p>
+
+<p style="text-align:center">&nbsp;</p>
+
+<h1><p style="text-align: center;"><span style="font-size:36px;"><span style="font-family:Verdana,Geneva,sans-serif;">HI, I AM TUSHAR KALITA</span>😀</span></p></h1>
+
+<p style="text-align: center;"><span style="font-size:22px;"><span style="font-family:Courier New,Courier,monospace">I AM A STUDENT, AND THIS IS MY WEBSITE.</span></span></p>
+
+<p style="text-align: center;"><span style="font-family:Courier New,Courier,monospace"><span style="font-size:22px;">CHECK ME OUT ON</span>:</span></p>
+
+<h2 style="text-align:center"><span style="font-size:14px"><span style="font-family:Courier New,Courier,monospace"><span style="color:#9b59b6"><a href="https://github.com/tusharkalita"><img alt="" src="https://github.githubassets.com/images/modules/logos_page/Octocat.png" style="height: 50px; width: 60px;" /></a>&nbsp; &nbsp;<a href="https://www.facebook.com/2srkalita"><img alt="" src="https://upload.wikimedia.org/wikipedia/en/thumb/0/04/Facebook_f_logo_%282021%29.svg/150px-Facebook_f_logo_%282021%29.svg.png" style="height: 50px; width: 50px;" /></a>&nbsp; &nbsp;<a href="https://www.instagram.com/thetusharkalita/"><img alt="" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/2048px-Instagram_icon.png" style="height: 50px; width: 50px;" /></a>&nbsp;&nbsp;</span></span></span></h2>
+
+<p style="text-align:center"><span style="font-size:14px"><span style="font-family:Courier New,Courier,monospace"><a href="https://github.com/tusharkalita"><span style="color:#8e44ad;">GITHUBUB</span></a><span style="color:#9b59b6">&nbsp; &nbsp;</span><a href="https://www.facebook.com/2srkalita"><span style="color:#2980b9;">FACEBOOK</span></a><span style="color:#2c3e50">&nbsp; &nbsp;</span><a href="https://www.instagram.com/thetusharkalita/"><span style="color:#e74c3c">INSTAGRAM</span></a></span></span></p>
+
+</BODY></HTML>
