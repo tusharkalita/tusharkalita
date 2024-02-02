@@ -3,7 +3,6 @@
 - 🌱 I’m currently learning java 
 - 💞️ I’m looking to collaborate on new Devloping
 - 📫 How to reach me ... ghostin@plak.in
-- 
 
 <!---
 tusharkalita/tusharkalita is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
